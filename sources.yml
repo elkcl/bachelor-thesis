@@ -1,0 +1,153 @@
+deptycheck:
+  type: article
+  title: "Dependent Types to Push Corners of the Property-based Testing (Extended Abstract)"
+  author:
+    - Buzdalov, Denis
+  date: 2024-09-06
+  url: "https://icfp24.sigplan.org/details/tyde-2024-papers/6/Dependent-Types-to-Push-Corners-of-the-Property-based-Testing-Extended-Abstract-"
+  parent:
+    - type: conference
+      title: ICFP
+      organization: Association for Computing Machinery
+      series: TyDe 2024
+      location: Milan, Italy
+
+deptycheck-gh:
+  type: web
+  title: "GitHub-репозиторий DepTyCheck"
+  url: "https://github.com/buzden/deptycheck"
+
+idris:
+  type: article
+  title: "Idris, a general-purpose dependently typed programming language: Design and implementation"
+  author:
+    - Brady, Edwin
+  serial-number:
+    doi: "10.1017/S095679681300018X"
+  volume: 23
+  page-range: 552-593
+  issue: 5
+  date: 2013
+  parent:
+    - type: periodical
+      title: "Journal of Functional Programming"
+      
+idris-elab:
+  type: article
+  title: "Elaborator reflection: extending Idris in Idris"
+  author:
+    - Christiansen, David
+    - Brady, Edwin
+  date: 2016
+  serial-number:
+    doi: "10.1145/2951913.2951932"
+  page-range: 284-197
+  publisher: "Association for Computing Machinery"
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming"
+
+idris2:
+  type: article
+  title: "Idris 2: Quantitative Type Theory in Practice"
+  author:
+    - Brady, Edwin
+  date: 2021
+  serial-number: 2104.00480
+  url: "https://arxiv.org/abs/2104.00480"
+  parent:
+    - type: repository
+      title: arXiv
+
+idris2-gh:
+  type: web
+  title: "GitHub-репозиторий Idris 2"
+  url: "https://github.com/idris-lang/Idris2"
+
+syzkaller-gh:
+  type: web
+  title: "GitHub-репозиторий syzkaller"
+  url: "https://github.com/google/syzkaller"
+
+fat32-spec:
+  type: reference
+  title: "Microsoft Extensible Firmware Initiative FAT32 File System Specification, FAT: General Overview of On-Disk Format"
+  url: "https://msdn.microsoft.com/en-us/windows/hardware/gg463080.aspx"
+
+janus:
+  type: article
+  title: Fuzzing File Systems via Two-Dimensional Input Space Exploration
+  author:
+  - Xu, Wen
+  - Moon, Hyungon
+  - Kashyap, Sanidhya
+  - Tseng, Po-Ning
+  - Kim, Taesoo
+  date: 2019
+  page-range: 818–834
+  serial-number:
+    doi: 10.1109/SP.2019.00035
+  parent:
+    type: proceedings
+    title: 2019 IEEE Symposium on Security and Privacy (SP)
+
+acl2:
+  type: article
+  title: 'Formalising Filesystems in the ACL2 Theorem Prover: an Application to FAT32'
+  author: Mehta, Mihir Parang
+  date: 2018-10
+  page-range: 18–29
+  url: http://dx.doi.org/10.4204/EPTCS.280.2
+  serial-number:
+    doi: 10.4204/eptcs.280.2
+    issn: 2075-2180
+  parent:
+    type: periodical
+    title: Electronic Proceedings in Theoretical Computer Science
+    publisher: Open Publishing Association
+    volume: 280
+
+linux-mcdc:
+  type: article
+  title: An Open-Source Structural Coverage Tool for {DO-178C} Compliance
+  author:
+  - Zhang, Wentao
+  - Oppelt, Andrew
+  - Jeon, Ikjun
+  - Park, Minji
+  - VanderLeest, Steven H.
+  - Wolber, Chuck
+  date: 2025-09
+  parent:
+    type: proceedings
+    title: AIAA DATC/IEEE 44th Digital Avionics Systems Conference (DASC '25)
+
+fat32-model:
+  type: web
+  title: "GitHub-репозиторий fat32-model"
+  url: "https://github.com/DepTyCheck/fat32-model"
+
+fs-model:
+  type: web
+  title: "GitHub-репозиторий fs-model"
+  url: "https://github.com/DepTyCheck/fs-model"
+
+syz-imagegen:
+  type: web
+  title: "Генерация начальных образов в коде syzkaller"
+  url: "https://github.com/google/syzkaller/blob/master/tools/syz-imagegen/imagegen.go"
+
+linux-kcov:
+  type: web
+  title: "KCOV: code coverage for fuzzing"
+  url: "https://www.kernel.org/doc/html/latest/dev-tools/kcov.html"
+
+linux-gcov:
+  type: web
+  title: "Using gcov with the Linux kernel"
+  url: "https://www.kernel.org/doc/html/latest/dev-tools/gcov.html"
+
+llvm-cov:
+  type: web
+  title: "Source-based Code Coverage"
+  url: "https://clang.llvm.org/docs/SourceBasedCodeCoverage.html"
