@@ -153,6 +153,11 @@
     first-line-indent: (amount: 1.8em, all: true),
   )
   set par(spacing: 1em)
+  
+  show sym.dash.em: it => sym.wj + it
+  show regex("т\\. [екдн]\\."): it => it.text.replace(" ", sym.space.nobreak)
+  show emph: it => [#it#h(0.1em)]
+  // show cite: it => sym.wj + it
   // show heading: it =>  {
   //   it
   //   par()[#text(size:0.5em)[#h(0.0em)]]

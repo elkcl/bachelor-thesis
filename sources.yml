@@ -151,3 +151,29 @@ llvm-cov:
   type: web
   title: "Source-based Code Coverage"
   url: "https://clang.llvm.org/docs/SourceBasedCodeCoverage.html"
+
+fat32-coursework:
+  type: thesis
+  title: "Автоматизация тестирования драйвера FAT32 при помощи генерации корректных образов файловой системы с использованием её формальной спецификации на основе зависимых типов"
+  author:
+    - Денисьев, Илья Денисович
+  date: 2025-05-31
+  organization: ВМК МГУ
+
+dependent-types:
+  type: web
+  title: "Dependent type theory"
+  url: "https://ncatlab.org/nlab/show/dependent+type+theory"
+
+lkl-article:
+  type: article
+  title: 'LKL: The Linux kernel library'
+  author:
+  - Purdila, Octavian
+  - Grijincu, Lucian Adrian
+  - Tapus, Nicolae
+  date: 2010
+  page-range: 328-333
+  parent:
+    type: proceedings
+    title: 9th RoEduNet IEEE International Conference
