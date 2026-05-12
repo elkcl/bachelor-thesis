@@ -137,6 +137,11 @@ syz-imagegen:
   title: "Генерация начальных образов в коде syzkaller"
   url: "https://github.com/google/syzkaller/blob/master/tools/syz-imagegen/imagegen.go"
 
+syz-patches:
+  type: web
+  title: "GitHub-репозиторий модифицированного фаззера syzkaller"
+  url: "https://github.com/elkcl/syzkaller/tree/bachelor-thesis"
+
 linux-kcov:
   type: web
   title: "KCOV: code coverage for fuzzing"
@@ -177,3 +182,13 @@ lkl-article:
   parent:
     type: proceedings
     title: 9th RoEduNet IEEE International Conference
+
+lcov:
+  type: web
+  title: "GitHub-репозиторий LCOV"
+  url: "https://github.com/linux-test-project/lcov"
+
+lcov-diff:
+  type: web
+  title: "GitHub-репозиторий lcov-diff"
+  url: "https://github.com/capgelka/lcov-diff"

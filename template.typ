@@ -66,11 +66,11 @@
   show heading: set block(above: 1.4em, below: 1em)
 
   align(center)[
-    #image("msu.png", height: 40mm)
+    #image("images/msu.png", height: 40mm)
     //#set par(spacing: 0.55em)
     #large(university) \
     #faculty \
-    #footnotesize(chair)
+    #chair
   ]
   v(1fr)
   align(horizon + center)[
@@ -114,7 +114,7 @@
     #align(center)[
       *Аннотация*
 
-      #large(title)
+      #large(title.replace("\n", " "))
 
       _#(author)_
     ]
@@ -150,13 +150,19 @@
   set par(
     justify: true,
     leading: 1em,
-    first-line-indent: (amount: 1.8em, all: true),
+    first-line-indent: (amount: 1.25cm, all: true),
   )
   set par(spacing: 1em)
   
   show sym.dash.em: it => sym.wj + it
   show regex("т\\. [екдн]\\."): it => it.text.replace(" ", sym.space.nobreak)
   show emph: it => [#it#h(0.1em)]
+  let in-ref = state("in-ref", false)
+  show ref: it => in-ref.update(true) + it + in-ref.update(false)
+  let sup(fig, ref) = (supplement: context if in-ref.get() { ref } else { fig })
+  show figure.where(kind: image): set figure(..sup("Рис.", "рис."))
+  show figure.where(kind: table): set figure(..sup("Таблица", "табл."))
+  show figure.where(kind: raw): set figure(..sup("Листинг", "лист."))
   // show cite: it => sym.wj + it
   // show heading: it =>  {
   //   it
