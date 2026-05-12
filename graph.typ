@@ -29,7 +29,7 @@
     x => data.at(xs.at(x)).at(1)
   ),
   lq.bar(
-    label: [4 дня],
+    label: [7 дней],
     width: 1/4,
     offset: 1/4,
     range(1, xs.len()),
