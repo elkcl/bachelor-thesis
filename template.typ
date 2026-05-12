@@ -43,6 +43,7 @@
   consultant_degree: [],
   consultant: [],
   city: [],
+  appendix: none,
   body,
 ) = {
   // Set the document's basic properties.
@@ -66,7 +67,7 @@
   show heading: set block(above: 1.4em, below: 1em)
 
   align(center)[
-    #image("images/msu.png", height: 40mm)
+    #image(logo, height: 40mm)
     //#set par(spacing: 0.55em)
     #large(university) \
     #faculty \
@@ -176,4 +177,13 @@
 
   pagebreak()
   bibliography("sources.yml", title: "Список литературы", style: "gost-r-705-2008-numeric")
+  if appendix != none {
+    pagebreak()
+    align(center, heading("Приложение А", numbering: none))
+    align(center)[*#appendix.title*]
+    counter(figure.where(kind: table)).update(0)
+    counter(figure.where(kind: image)).update(0)
+    counter(figure.where(kind: raw)).update(0)
+    appendix.body
+  }
 }

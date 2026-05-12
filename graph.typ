@@ -11,7 +11,7 @@
   lq.bar(
     // label: [30 мин],
     range(1),
-    width: 3/4,
+    width: 1/4,
     x => data.at(xs.at(x)).at(0)
   ),
   lq.bar(
